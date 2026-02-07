@@ -3,6 +3,8 @@ import Navbar from "./pages/navbar/Navbar"
 import Stopwatch from "./components/stopwatch/Stopwatch"
 import SearchComp from "./components/searchSort/SearchComp"
 import DropdownInfiniteScroll from "./components/i-scroll/InfiniteScroll"
+import OTPComp from "./components/otp/OTPComp"
+import AddProductToCart from "./components/product-cart/AddProductToCart"
 
 
 const App = () => {
@@ -15,6 +17,9 @@ const App = () => {
         <Route  path="/" element={<Stopwatch />} /> 
         <Route path="/search-sort" element={<SearchComp />} />
         <Route path="/i-scroll" element={<DropdownInfiniteScroll />} />
+        <Route path="/otp" element={<OTPComp />} />
+        <Route path="/product-cart" element={<AddProductToCart />} />
+        <Route path="*" element={<h2 className="text-center mt-5">404 Page Not Found</h2>} />
       </Routes>
     </div>
   )

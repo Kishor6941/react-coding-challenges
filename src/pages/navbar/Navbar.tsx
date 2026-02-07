@@ -19,6 +19,12 @@ const Navbar = () => {
       <li className="nav-item active">
         <NavLink className="nav-link" to="/i-scroll">I-Scroll</NavLink>
       </li>
+       <li className="nav-item active">
+        <NavLink className="nav-link" to="/otp">OTP</NavLink>
+      </li>
+       <li className="nav-item active">
+        <NavLink className="nav-link" to="/product-cart">Product Cart</NavLink>
+      </li>
     </ul>
   </div>
 </nav>

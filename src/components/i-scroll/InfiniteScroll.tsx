@@ -17,7 +17,7 @@ const DropdownInfiniteScroll = () => {
   };
 
   return (
-    <div style={{ width: "200px" }}>
+    <div style={{ width: "200px" }} className="mx-auto mt-5">
       <div
         style={{
           border: "1px solid #ccc",

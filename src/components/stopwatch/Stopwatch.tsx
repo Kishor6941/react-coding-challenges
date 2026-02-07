@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useRef } from "react"
 
 
 const Stopwatch = () => {
@@ -21,7 +21,7 @@ const resetWatch = () => {
     stopWatch()
     setTime(0)
 }
-
+    
 const formatTime = (time: number) => {
     const getHours = String(Math.floor(time / 3600)).padStart(2, '0')
     const getMinutes = String(Math.floor((time % 3600) / 60)).padStart(2, '0')
