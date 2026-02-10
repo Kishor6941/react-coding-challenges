@@ -18,3 +18,19 @@ export async function fetchComments(postId:number) {
     }
     return data
 }
+
+export async function deletePost(postId:number) {
+    const response = await axios.delete(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+    if (response.status !== 200) {
+        throw new Error('Network response was not ok')
+    }
+    return true
+}
+
+export async function updatePost(postId:number, updatedData:any) {
+    const response = await axios.put(`https://jsonplaceholder.typicode.com/posts/${postId}`, updatedData)
+    if (response.status !== 200) {
+        throw new Error('Network response was not ok')
+    }
+    return {title : "Updated Title", body : "Updated Body"}
+}
