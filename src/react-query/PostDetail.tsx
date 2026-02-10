@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchComments } from "../services/Post.api";
+import { fetchComments } from "../services/post.api";
 import "./PostDetails.css";
 interface PostDetailProps {
   post: any;

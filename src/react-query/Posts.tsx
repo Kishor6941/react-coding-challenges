@@ -1,5 +1,5 @@
 import { useQuery, useQueryClient, useMutation } from '@tanstack/react-query'
-import { fetchPosts, deletePost ,updatePost } from '../services/Post.api'
+import { fetchPosts, deletePost ,updatePost } from '../services/post.api'
 import { useState,useEffect } from 'react'
 import PostDetail from './PostDetail'
 
