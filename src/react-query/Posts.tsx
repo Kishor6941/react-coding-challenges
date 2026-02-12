@@ -45,9 +45,9 @@ const updateMutation = useMutation({
         ))}
        </ul>
        <div className='pages' style={{display:"flex", justifyContent:"space-between",margin : "0 30px"}}>
-            <button onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}>Previous Page</button>
+            <button className='btn btn-secondary' onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}>Previous Page</button>
             <span> Page {currentPage} </span>
-            <button onClick={() => setCurrentPage(prev => prev + 1)}>Next Page</button>
+            <button className="btn btn-success" onClick={() => setCurrentPage(prev => prev + 1)}>Next Page</button>
        </div>
        <hr />
        {selectedPost && <PostDetail post={selectedPost} deleteMutation={deleteMutation} updateMutation={updateMutation} />}
