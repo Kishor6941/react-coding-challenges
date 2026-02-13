@@ -6,7 +6,7 @@ import DropdownInfiniteScroll from "./components/i-scroll/InfiniteScroll"
 import OTPComp from "./components/otp/OTPComp"
 import AddProductToCart from "./components/product-cart/AddProductToCart"
 import Posts from "./react-query/Posts"
-
+import AutoComplete from "./components/auto-complete/AutoComplete"
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/otp" element={<OTPComp />} />
         <Route path="/product-cart" element={<AddProductToCart />} />
         <Route path="/tankstack-query" element={<Posts />} />
+        <Route path="/auto-complete" element={<AutoComplete />} />
         <Route path="*" element={<h2 className="text-center mt-5">404 Page Not Found</h2>} />
       </Routes>
     </div>

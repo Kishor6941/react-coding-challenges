@@ -29,6 +29,9 @@ const Navbar = () => {
       <li className="nav-item active">
         <NavLink className="nav-link" to="/tankstack-query">Tankstack Query</NavLink>
       </li>
+      <li className="nav-item active">
+        <NavLink className="nav-link" to="/auto-complete">Auto-Complete</NavLink>
+      </li>
 
     </ul>
   </div>
